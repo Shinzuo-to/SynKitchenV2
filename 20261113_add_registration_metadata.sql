@@ -1,0 +1,7 @@
+USE the_burgerhotdog;
+
+ALTER TABLE users
+ADD COLUMN IF NOT EXISTS middle_name VARCHAR(100) NOT NULL DEFAULT '' AFTER first_name;
+
+ALTER TABLE users
+ADD COLUMN IF NOT EXISTS id_type VARCHAR(32) NOT NULL DEFAULT '' AFTER last_name;
